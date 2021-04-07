@@ -6,6 +6,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,9 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initTabLayout() {
-        for (String title : mTitles) {
-            mFragments.add(SimpleCardFragment.getInstance(title));
-        }
+        mFragments.add(SimpleCard01Fragment.getInstance("服务商家"));
+        mFragments.add(SimpleCard02Fragment.getInstance("服务人员"));
         View decorView = getWindow().getDecorView();
         ViewPager vp = ViewFindUtils.find(decorView, R.id.vp);
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
     private final String[] mTitles = {
             "服务商家", "服务人员"
-//            "服务商家", "服务人员", "服务人员2", "服务人员3", "服务人员4", "服务人员5"
     };
     private MyPagerAdapter mAdapter;
     private ArrayList<Fragment> mFragments = new ArrayList<>();
@@ -61,6 +61,18 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             return mFragments.get(position);
         }
+    }
+
+    public void web_01_click(View view) {
+        Uri uri = Uri.parse("https://blog.csdn.net/iwanghang");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    public void web_02_click(View view) {
+        Uri uri = Uri.parse("https://iwanghang.blog.csdn.net/article/details/54377540");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
 }

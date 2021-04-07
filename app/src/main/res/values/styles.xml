@@ -7,4 +7,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="EditTextLogin" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#74D9DD</item>
+        <item name="colorControlActivated">#74D9DD</item>
+    </style>
+
+    <style name="CheckBoxLogin" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/_6472BB</item>
+        <item name="colorControlActivated">@color/_6472BB</item>
+    </style>
 </resources>

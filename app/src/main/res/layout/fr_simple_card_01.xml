@@ -1,0 +1,120 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ECEEFA"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/card_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_card"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="100px"
+        android:background="@drawable/radius_full_ffffff_72px"
+        android:layout_below="@+id/title_line"
+        android:layout_marginLeft="85px"
+        android:layout_marginRight="85px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130px">
+        <ImageView
+            android:layout_marginLeft="72px"
+            android:layout_marginRight="20px"
+            android:layout_gravity="center"
+            android:layout_width="48px"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="#CCCCCC"
+            android:layout_width="0px"
+            android:layout_height="72px"/>
+        <EditText
+            android:id="@+id/edit_vip_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="登录手机号码"
+            android:paddingLeft="29px"
+            android:singleLine="true"
+            android:textColor="#4A4A4A"
+            android:textColorHint="#C3C3C3"
+            android:textSize="14sp"
+            android:theme="@style/EditTextLogin" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="86px"
+        android:background="@drawable/radius_full_ffffff_72px"
+        android:layout_below="@+id/title_line"
+        android:layout_marginLeft="85px"
+        android:layout_marginRight="85px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="130px">
+        <ImageView
+            android:layout_marginLeft="72px"
+            android:layout_marginRight="20px"
+            android:layout_gravity="center"
+            android:layout_width="48px"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher" />
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="#CCCCCC"
+            android:layout_width="0px"
+            android:layout_height="72px"/>
+        <EditText
+            android:id="@+id/edit_password"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:paddingLeft="58px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:hint="输入密码"
+            android:singleLine="true"
+            android:textColorHint="#C3C3C3"
+            android:textColor="#4A4A4A"
+            android:textSize="14sp"
+            android:theme="@style/EditTextLogin" />
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="right"
+        android:layout_marginRight="50px"
+        android:paddingTop="26px"
+        android:paddingLeft="26px"
+        android:paddingRight="26px"
+        android:paddingBottom="26px"
+        android:text="忘记密码？"
+        android:textSize="14sp"
+        android:textColor="#9B9B9B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:background="@drawable/radius_full_6472bb_72px"
+        android:layout_marginLeft="85px"
+        android:layout_marginRight="85px"
+        android:layout_marginTop="92px"
+        android:gravity="center"
+        android:text="登 录"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="130px"/>
+
+<!--    <include-->
+<!--        layout="@layout/activity_login_checkbox"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>
