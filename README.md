@@ -10,4 +10,4 @@ V1.0
 <img src="FlycoTabLayout-V1.0.gif" width="30%" alt="FlycoTabLayout-V1.0.gif"/>
 
 V2.0
-<img src="FlycoTabLayout-V1.0.gif" width="30%" alt="FlycoTabLayout-V2.0.gif"/>
+<img src="FlycoTabLayout-V2.0.gif" width="30%" alt="FlycoTabLayout-V2.0.gif"/>
