@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivityV1" />
+        <activity android:name=".MainActivityV2" />
     </application>
 
 </manifest>

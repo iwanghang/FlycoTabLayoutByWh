@@ -8,81 +8,15 @@
     android:background="#ECEEFA"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_alignParentRight="true"
-            android:id="@+id/text_show_register"
-            android:paddingTop="36dp"
-            android:paddingLeft="28dp"
-            android:paddingRight="28dp"
-            android:paddingBottom="4dp"
-            android:text="注册"
-            android:textSize="20sp"
-            android:textColor="#6472BB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_marginBottom="14dp"
-            android:layout_centerHorizontal="true"
-            android:src="@mipmap/ic_launcher"
-            android:adjustViewBounds="true"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
-
-    <com.flyco.tablayout.SlidingTabLayout
-        android:id="@+id/tl_4"
-
-        android:layout_gravity="center"
-
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-
-        android:background="@null"
-
-        tl:tl_tab_padding="0dp"
-        tl:tl_tab_width="120dp"
-        tl:tl_textsize="15sp"
-
-        tl:tl_textSelectColor="#6472BB"
-        tl:tl_textUnselectColor="#7B7B7B"
-
-        tl:tl_textSelectSize="20px"
-        tl:tl_textUnselectSize="16px"
-
-        tl:tl_textBold="SELECT"
-
-        tl:tl_indicator_color="#6472BB"
-        tl:tl_indicator_height="3dp"
-
-        tl:tl_underline_color="#D0D6F4"
-        tl:tl_underline_height="1dp" />
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"/>
-
-    <include
-        layout="@layout/activity_login_checkbox"
+    <Button
+        android:onClick="v1click"
+        android:text="V1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <TextView
-        android:paddingTop="8dp"
-        android:paddingBottom="23dp"
-        android:text="版权所有@2021 BYWH科技有限公司"
-        android:textSize="12sp"
-        android:textColor="#9B9B9B"
-        android:gravity="center"
+
+    <Button
+        android:onClick="v2click"
+        android:text="V2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
